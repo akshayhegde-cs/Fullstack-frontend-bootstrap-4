@@ -81,7 +81,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title"><b>Reserve a Table</b></h4>
-                    <button id="ReserveCancelButton" type="button" class="close">&times;</button>
+                    <button id="closebuttonreserve" type="button" class="close">&times;</button>
                 </div>
                 <div class="modal-body">
                     <form id="Reserve">
@@ -138,7 +138,7 @@
                         </div>
                         <div class="form-group row">
                             <div class="offset-md-2 col-md-10">
-                                <button id="ReserveCancelButtonDown" type="button" class="btn btn-secondary btn-sm ml-auto">Cancel</button>
+                                <button id="cancelbuttonreserve" type="button" class="btn btn-secondary btn-sm ml-auto">Cancel</button>
                                 <button type="submit" class="btn btn-primary btn-sm ml-1">Reserve</button>
                             </div>
                         </div>
@@ -339,10 +339,7 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
+
             $("#loginbutton").click(function(){      
                 $('#loginModal').modal('toggle');
             });
@@ -355,14 +352,14 @@
             $("#Reservebutton").click(function(){      
                 $('#ReserveModal').modal('toggle');
             });
-            $("#ReserveCancelButton").click(function(){
+            $("#closebuttonreserve").click(function(){
                 $('#ReserveModal').modal('hide');
             });
-            $("#ReserveCancelButtonDown").click(function(){
+            $("#cancelbuttonreserve").click(function(){
                 $('#ReserveModal').modal('hide');
             });
         });
-    </script> 
+    </script>      
 </body>
 
 </html>
